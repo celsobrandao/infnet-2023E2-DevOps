@@ -13,5 +13,15 @@ namespace TestApi
 
             Assert.True(result.Any());
         }
+
+        [Fact]
+        public void DeveFazerGetComFalha()
+        {
+            var controller = new WeatherForecastController();
+
+            var result = controller.Get();
+
+            Assert.False(!result.Any());
+        }
     }
 }
