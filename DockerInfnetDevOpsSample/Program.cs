@@ -24,6 +24,8 @@ builder.Services.AddHealthChecksUI(s =>
 })
 .AddInMemoryStorage();
 
+builder.Services.AddApplicationInsightsTelemetry(builder.Configuration["APPLICATIONINSIGHTS_CONNECTION_STRING"]);
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -47,5 +49,10 @@ app.UseRouting()
 
        config.MapHealthChecksUI();
    });
+
+app.UseHealthChecksUI(options =>
+{
+    options.UIPath = "/monitor";
+});
 
 app.Run();
