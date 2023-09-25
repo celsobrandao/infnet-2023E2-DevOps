@@ -6,7 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>ab96cca8-ad32-4e14-91ac-73a2fb4b8ccc</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
-    <ApplicationInsightsResourceId>InstrumentationKey=b82253a3-ce29-4bff-8c8d-dd285a9214e2;IngestionEndpoint=https://brazilsouth-1.in.applicationinsights.azure.com/;LiveEndpoint=https://brazilsouth.livediagnostics.monitor.azure.com/</ApplicationInsightsResourceId>
+    <ApplicationInsightsResourceId>/subscriptions/b003a868-780d-44fb-8d05-4f8ea39ea7ca/resourceGroups/23E3_3/providers/microsoft.insights/components/CelsoBrandaoDockerInfnetDevOpsSample</ApplicationInsightsResourceId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -15,6 +15,7 @@
     <PackageReference Include="AspNetCore.HealthChecks.UI.InMemory.Storage" Version="7.0.0" />
     <PackageReference Include="AspNetCore.HealthChecks.Uris" Version="7.0.0" />
     <PackageReference Include="Microsoft.Bcl.AsyncInterfaces" Version="7.0.0" />
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.15.0" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.17.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
